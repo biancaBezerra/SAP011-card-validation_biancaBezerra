@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000000;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #64c5d6;
+  color: #f80174;
+}
+
+#logo {
+  width: 60px;
+  height: auto;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 50px;
+}
+
+.container {
+  background-color: #000000;
+  width: 95%;
+  height: 300px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* estilo credit card */
+.credit-card {
+  width: 360px;
+  height: 220px; /* Altura do cartão quando não estiver virado */
+  perspective: 1000px;
+  transform-style: preserve-3d; /* Garante que os elementos filhos mantenham a perspectiva */
+  transition: transform 0.6s; /* Adiciona uma transição suave */
+}
+
+/* Define a frente do cartão */
+.credit-card .card-front,
+.credit-card .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden; /* Garante que a parte de trás do cartão não seja visível quando virado */
+  border-radius: 8px;
+}
+
+/* Define os estilos para a frente do cartão */
+.credit-card .card-front {
+  background-color: #52eebf;
+  transform: rotateY(0deg); /* Inicialmente, a frente está visível */
+}
+
+/* Define os estilos para a parte de trás do cartão */
+.credit-card .card-back {
+  background-color: #3dbd8c;
+  transform: rotateY(180deg); /* Inicialmente, a parte de trás está escondida */
+}
+
+/* Adiciona a animação de flip quando o cursor estiver sobre o cartão */
+.credit-card:hover {
+  transform: rotateY(180deg);
+}
+
+/* Ajuste a altura do cartão durante o flip */
+.credit-card.flip {
+  height: 280px; /* Altura do cartão quando estiver virado */
+}
+
+/* Posicione o CVC na parte de trás do cartão */
+.credit-card .card-cvc {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  height: 100%;
+  color: #333;
+  padding: 50px;
+}
+
+/* Estilo para o formulário */
+.form-container {
+  width: 390px;
+  background-color: #2d9b9b;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 25%;
+}
+
+.form-container label,
+.form-container input,
+.form-container button {
+  display: flex;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: -10px;
+}
+
+button {
+  background-color: #08284b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.card-info {
+  padding: 2px 10px 10px;
+  text-align: end;
+}
+
+.card-back {
+  text-align: left;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#card-chip {
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 30px;
+  
+}
+
+.card-logo {
+  width: 80px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 260px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+}

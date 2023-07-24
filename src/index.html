@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang = "pt-br">
   <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - Trankera's Bazar</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/favicon_sacola.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
   </head>
+  
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <img id="logo" src="./assets/logo_bazar.png" alt="logo_bazar_trankeras">
+      <h1>Bazar Trankera's</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html">Produtos</a></li>
+          <li><a href="./index.html">Finalizar Compra</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="container">
+        <div id="creditCard" class="credit-card">
+          <div class="card-front">
+            <div id= "cardLogo" class="card-logo"></div>
+            <div class="card-chip">
+              <img id= "card-chip" src="./assets/chip-cartao.png" alt="chip_cartao_credito">
+            </div>
+            <div class="card-info">
+              <div id="cardDataDisplay" class="card-number">Numero do Cartão:</div>
+              <div id="cardNameDisplay" class="card-holder">Nome do Titular:</div>
+              <div id="cardExpiryDisplay" class="card-expiry">Data de validade:</div>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-cvc" id="cardCVCNumber">CVC:</div>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <label for="cardNumber">Número do Cartão</label>
+          <input type="text" id="cardNumber" maxlength="16" placeholder="Insira o número do cartão">
+          <label for="cardName">Nome do Titular</label>
+          <input type="text" id="cardName" placeholder="Insira o nome do titular">
+          <label for="cardExpiry">Data de validade</label>
+          <input type="text" id="cardExpiry" maxlength="5" placeholder="MM/AA">
+          <label for="cardCVC">Código de Segurança</label>
+          <input type="text" id="cardCVC" maxlength="3" placeholder="Código de Segurança">
+          <button id="validateButton">Validar Cartão</button>
+        </div>
+      </div>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
