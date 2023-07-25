@@ -76,12 +76,12 @@ https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent
 Em resumo, os critérios mínimos de aceitação do projeto para considerar o
 Project Feedback:
 
-* [ ] Possui uma interface que permite ao usuário permita ao usuário validar o número de um cartão de crédito e ocultar todos os dígitos de um cartão e ocultar o número até os 4 últimos dígitos.
-* [ ] O projeto será entregue incluindo testes unitários dos métodos`validator` (`isValid` e `maskify`).
-* [ ] O projeto será entregue livre de _erros_ de `eslint` (_warnings_ são ok).
-* [ ] O código do seu projeto será entregue no GitHub.
-* [ ] A interface será "implantada" usando o GitHub Pages.
-* [ ] O README contém uma definição de produto.
+* [x] Possui uma interface que permite ao usuário permita ao usuário validar o número de um cartão de crédito e ocultar todos os dígitos de um cartão e ocultar o número até os 4 últimos dígitos.
+* [x] O projeto será entregue incluindo testes unitários dos métodos`validator` (`isValid` e `maskify`).
+* [x] O projeto será entregue livre de _erros_ de `eslint` (_warnings_ são ok).
+* [x] O código do seu projeto será entregue no GitHub.
+* [x] A interface será "implantada" usando o GitHub Pages.
+* [x] O README contém uma definição de produto.
 
 ## 6. Features
 

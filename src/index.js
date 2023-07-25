@@ -1,16 +1,18 @@
 import validator from './validator.js';
 
-// Função para atualizar a exibição do cartão de dados (número, nome e data de validade)
-const cardDataDisplay = document.getElementById('cardDataDisplay');
-const cardNameDisplay = document.getElementById('cardNameDisplay');
-const cardExpiryDisplay = document.getElementById('cardExpiryDisplay');
-const cardCVCNumber = document.getElementById('cardCVCNumber');
-
+// Função para atualizar a exibição do cartão de dados (colocar denro da função)
 function updateCardDataDisplay() {
+
+  const cardDataDisplay = document.getElementById('cardDataDisplay');
+  const cardNameDisplay = document.getElementById('cardNameDisplay');
+  const cardExpiryDisplay = document.getElementById('cardExpiryDisplay');
+  const cardCVCNumber = document.getElementById('cardCVCNumber');
+  
   const cardNumber = document.getElementById('cardNumber').value;
   const cardName = document.getElementById('cardName').value;
   const cardExpiry = document.getElementById('cardExpiry').value;
   const cardCVC = document.getElementById('cardCVC').value;
+  
 
   // Espelha os dados inseridos no input do cartão para a ilustração do cartão
   cardDataDisplay.textContent = validator.maskify(cardNumber);
@@ -59,6 +61,7 @@ function validateCard() {
   updateCardDataDisplay();
 }
 
+
 //função para identificar a bandeira do cartão.
 
 function getCardLogo(cardNumber) {
@@ -95,6 +98,7 @@ function updateCardlogo () {
   cardLogoDiv.style.backgroundImage = `url('./assets/${cardLogoFileName}')`;
   
 }
+
 
 document.getElementById('cardNumber').addEventListener('input', updateCardlogo);
 
