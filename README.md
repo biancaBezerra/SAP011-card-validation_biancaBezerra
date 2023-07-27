@@ -11,7 +11,7 @@
 * [3. Resumo do projeto](#3-resumo-do-projeto)
 * [4. Definição de produto](#4-definição-de-produto)
 * [5. Materiais de apoio e Tenologias](#5-materiais-de-apoio-e-tecnologias)
-* [6. Para considerar o feedback do projeto](#6-para-considerar-o-feedback-do-projeto)
+* [6. Objetivos alcançados no projeto](#6-objetivos-alcançados-no-projeto)
 
 
 ## 1. Features
