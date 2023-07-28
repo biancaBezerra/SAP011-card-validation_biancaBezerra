@@ -16,9 +16,15 @@
 
 ## 1. Features
 
-* GIF
+### GIF
 <h1 align = 'center'>
   <img alt = readme title = readme src ="./src/assets/readme.gif"/>
+</h1>
+
+### Protótipo de baixa fidelidade
+<h1 align = 'center'>
+  <img alt = prototype1 title = prototype1 src ="./src/assets/prototype1.png"/>
+  <img alt = prototype2 title = prototype2 src ="./src/assets/prototype2.png"/>
 </h1>
 
 ## 2. Introdução

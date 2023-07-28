@@ -65,7 +65,7 @@ main {
   height: 220px; /* Altura do cartão quando não estiver virado */
   perspective: 1000px;
   transform-style: preserve-3d; /* Garante que os elementos filhos mantenham a perspectiva */
-  transition: transform 0.6s; /* Adiciona uma transição suave */
+  transition: transform 0.9s; /* Adiciona uma transição suave */
 }
 
 /* Define a frente do cartão */
