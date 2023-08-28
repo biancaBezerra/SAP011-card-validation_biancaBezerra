@@ -86,7 +86,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent
 
 ## 6. Objetivos alcançados no projeto
 
-* [x] Possui uma interface que permite ao usuário permita ao usuário validar o número de um cartão de crédito e ocultar todos os dígitos de um cartão e ocultar o número até os 4 últimos dígitos.
+* [x] Possui uma interface que permita ao usuário validar o número de um cartão de crédito e ocultar todos os dígitos de um cartão até os 4 últimos dígitos.
 * [x] O projeto será entregue incluindo testes unitários dos métodos`validator` (`isValid` e `maskify`).
 * [x] O projeto será entregue livre de _erros_ de `eslint` (_warnings_ são ok).
 * [x] O código do seu projeto será entregue no GitHub.
